@@ -127,7 +127,7 @@ void updateInput(WINDOW *mainWin, int *cursY, int *cursX, std::vector<cell> cell
     }
 }
 
-void renderCells(WINDOW *mainWin, int &cursY, int &cursX, std::vector<cell> &cells, viewport &view) {
+void renderCells(WINDOW *mainWin, const int &cursY, const int &cursX, std::vector<cell> &cells, const viewport &view) {
     wclear(mainWin);
 
     for (std::vector<cell>::iterator curCell = cells.begin(); curCell != cells.end(); ++curCell) {
