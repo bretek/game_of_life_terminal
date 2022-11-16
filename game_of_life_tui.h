@@ -1,8 +1,5 @@
 #include <ncurses.h>
 #include <vector>
-#include <unistd.h>
-#include <thread>
-#include <algorithm>
 
 struct cell {
     int x, y;
